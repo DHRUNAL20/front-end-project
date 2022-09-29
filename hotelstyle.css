@@ -1,0 +1,14 @@
+#onlyheader{
+    background-color: black;
+    position: fixed;
+    height: 11vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+#logo{
+    position: absolute;
+    height: 9vh;
+    display: block;
+    padding-left: 4%;
+}

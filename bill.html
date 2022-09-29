@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Royal Indian Paradise</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="hmstylesheet.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  body{
+      background-color: white;
+  }
+  	h1{margin-left: 150px; text-align: center;}
+  	td{padding: 20px;}
+    table,td{
+        border: 2px solid#f1f1f1;
+    }
+    input[type=text], input[type=number], input[type=date]{
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background-color: #f1f1f1;
+    }
+    input[type=text]:focus, input[type=number]:focus{
+      background-color: #ddd;
+      outline: none;
+    }
+    .subtn{
+      background-color: #4caf50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      width: 10%;
+      opacity: 0.9;
+      margin: 8px 0;
+      cursor: pointer;
+      margin-left: 48%;
+    }
+    .subtn:hover{
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="home.html"><img id="logo" src="images/logo1.png"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="home.html">Home</a></li>
+              <li class="active"><a href="dining.html">Dining</a></li>
+              <li><a href="findbooking.html">Find Booking</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="signup.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <h1>PLEASE FILL UP THE FOLLOWING DETAILS </h1>
+  <div id="name"></div>
+    <form>
+      <table style="margin-left: 40%">
+        <tr>
+          <td>ENTER FULL NAME</td><td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Address</td><td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>LANDMARK(IF ANY)</td><td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>PHONE NUMBER</td><td><input type="text"></td>
+        </tr>
+      </table>
+      <button type="submit" class="subtn" onclick="submitFunction()">Submit</button>
+    </form>
+    <script>
+        function submitFunction() {
+            alert("You have placed your order successfully. It will be delivered to you very soon.");
+        }
+    </script>
+  
+</body>
+</html>

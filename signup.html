@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Royal Indian Paradise</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="hmstylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    *{
+      box-sizing: border-box;
+    }
+
+    /*  Add padding to containers */
+    .signup-container{
+      padding: 16px;
+      background-color: white;
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 2%;
+    }
+
+    /* Full-width input feilds */
+    input[type=email], input[type=password]{
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background-color: #f1f1f1;
+    }
+    input[type=email]:focus, input[type=password]:focus{
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr{
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit button */
+    .signupbtn{
+      background-color: #4caf50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      width: 100%;
+      opacity: 0.9;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+    .signupbtn:hover{
+      opacity: 1;
+    }
+    /* Add a blue text color to links */
+    a{
+      color: dodgerblue;
+    }
+
+    /* Set a grey background color and center the text of "log in" section */
+    .login-container{
+      height: 70px;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+    .login-container p{
+      padding-top: 3vh;
+    }
+    .socialicons a{
+      cursor: pointer;
+      text-decoration: none;
+    }
+    footer p{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="home.html"><img id="logo" src="images/logo1.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="findbooking.html">Find Booking</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <form>
+    <div class="signup-container">
+      <h1>Sign Up</h1>
+      <p>Fill out the following details to Sign up.</p>
+
+      <label for="email">Email</label>
+      <input type="email" placeholder="Enter Email" name="emal" id="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+      <label for="repeat-password">Repeat Password</label>
+      <input type="password" placeholder="Reapeat Password" name="repeat-password" id="repeat-password" required>
+      <hr>
+      <p>By creating an account you agree to our <a href="#">Terms and Privacy</a>.</p>
+
+      <button type="submit" class="signupbtn" onclick="signupFunction()">Sign Up</button>
+    </div>
+    <div class="login-container">
+      <p>Already have an account? <a href="login.html">Log In</a></p>
+    </div>
+  </form>
+
+<footer class="footer" style="margin-left: 0; width: 100%;">
+  <div class="socialicons">
+   <a><img src="images/facebook.png" class="icon"></a>
+   <a><img src="images/whatsapp.png" class="icon"></a>
+   <a><img src="images/instagram.png" class="icon"></a>
+   <a><img src="images/linkedin.png" class="icon"></a>
+   <a><img src="images/twitter.png" class="icon"></a>
+  </div><br>
+  <p>Contact Us :<br>Mobile : xxxxxxxxxx<br>Email : abc@example.com</p>
+</footer>
+<script>
+  function signupFunction() {
+    var signup = alert("Successfully created your account");
+  }
+</script>
+</body>
+</html>
